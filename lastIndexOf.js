@@ -3,12 +3,14 @@ const arr = [1,4,3,4,3,5,2];
 
 /**
  * This function takes in array, a callback function, the element we want to search and 
- * from what index we want to start looking from
+ * from what last index we want to start looking from
+ * 
+ * using a backwards loop to find the last instance of the element and return the index
  * 
  * if fromIndex's value is larger or equal to array's length return -1.
  * if there is no fromIndex passed or the fromIndex is a negative value,
- * the loop will start from 0.
- * otherwise loop fromIndex to end of array.
+ * the loop will start from the arr.lenght-1 to 0.
+ * otherwise loop from the end of array to fromIndex.
  * 
  * call the callback function which takes in the element to be search and the current element
  * if callback returns true, our function will the index of the element that was just processed
