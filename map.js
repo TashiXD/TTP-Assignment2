@@ -13,6 +13,5 @@ function square(newArr, value, index){
 }
 
 const modded = myMap(arr, square);
-
 console.log(`Before: ${arr}`);
 console.log(`New Arr: ${modded}`);
