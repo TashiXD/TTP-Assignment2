@@ -6,7 +6,7 @@ function myReduce(arr, callback, initialValue){
     //if its a falsy then there is no initialValue
     //otherwise call the callback function with initial value and
     //set the result of callback to accumulator
-    if(typeof initialValue){
+    if(initialValue){
         accumulator = callback(initialValue, currentValue);
     } 
 
@@ -29,5 +29,5 @@ function reducer(accumulator, currentValue){
     return accumulator+currentValue;
 }
 
-const sum = myReduce(arr,reducer,10);
+const sum = myReduce(arr,reducer);
 console.log(sum);
